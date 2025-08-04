@@ -38,6 +38,3 @@ If no API key is provided, the tool will show a simulated translation for demo p
 - [`styles.css`](styles.css): Stylesheet for UI
 - [`script.js`](script.js): JavaScript logic
 
-## License
-
-This project is provided for educational/demo
