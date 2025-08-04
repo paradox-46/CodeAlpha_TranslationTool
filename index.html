@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Language Translation Tool</h1>
+        
+        <div class="translation-box">
+            <div class="source-section">
+                <div class="language-selector">
+                    <label for="source-language">From:</label>
+                    <select id="source-language">
+                        <option value="auto">Detect Language</option>
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="zh">Chinese</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ar">Arabic</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </div>
+                <textarea id="source-text" placeholder="Enter text to translate..."></textarea>
+                <div class="char-count"><span id="source-char-count">0</span>/5000</div>
+            </div>
+            
+            <div class="swap-btn-container">
+                <button id="swap-languages" title="Swap languages">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+            </div>
+            
+            <div class="target-section">
+                <div class="language-selector">
+                    <label for="target-language">To:</label>
+                    <select id="target-language">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="zh">Chinese</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ar">Arabic</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </div>
+                <textarea id="target-text" placeholder="Translation will appear here..." readonly></textarea>
+                <div class="action-buttons">
+                    <button id="copy-translation" title="Copy translation">
+                        <i class="far fa-copy"></i> Copy
+                    </button>
+                    <button id="speak-translation" title="Listen to translation">
+                        <i class="fas fa-volume-up"></i> Speak
+                    </button>
+                    <span class="translation-status" id="translation-status"></span>
+                </div>
+            </div>
+        </div>
+        
+        <button id="translate-btn">Translate</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
